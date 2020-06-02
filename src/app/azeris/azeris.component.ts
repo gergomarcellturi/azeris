@@ -87,11 +87,4 @@ export class AzerisComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  public setHeaderStyle() {
-    const styles = {
-      'background-image': `linear-gradient(to right, ${this.kirisame.tipus.color}, rgba(255,0,0,0)`
-    };
-    return styles;
-  }
-
 }

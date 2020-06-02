@@ -1,0 +1,84 @@
+element {
+  --color-var: attr;
+}
+
+
+.nev {
+  padding-left: 1rem;
+  margin-left: -0.5rem;
+  font-size: larger;
+  font-weight: bolder;
+  color: #FAEBD7;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+
+.jutsu-image {
+  display: inline-block;
+  max-height: 200px;
+}
+
+.main-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.kep-container {
+  margin: 1rem 0;
+}
+
+
+.kanji-container {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  background: #666;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #A9A9A9;
+  transition: .5s;
+}
+
+/*ul li a {*/
+/*  position: relative;*/
+/*  display: block;*/
+/*  width: 60px;*/
+/*  height: 60px;*/
+/*  text-align: center;*/
+/*  line-height: 60px;*/
+/*  background: #171515;*/
+/*  border-radius: 50%;*/
+/*  font-size: 30px;*/
+/*  color: #666;*/
+/*  transition: .5s;*/
+/*}*/
+
+.kanji-container:before {
+  content: '';
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  border-radius:50%;
+  /*background: #d35400; !* külső szín *!*/
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
+}
+
+.kanji-container:hover:before {
+  transform: scale(1.2);
+  /*box-shadow: 0 0 15px #d35400; !* külső szín átmenetbe*!*/
+  box-shadow: 0 0 15px var(--color-var);
+  filter: blur(3px);
+}
+
+.kanji-container:hover {
+  color: var(--color-var); /* Kanji szín */
+  box-shadow: 0 0 15px var(--color-var);
+  text-shadow: 0 0 15px var(--color-var);
+}

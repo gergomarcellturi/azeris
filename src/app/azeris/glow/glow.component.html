@@ -1,0 +1,43 @@
+<div class="main-container">
+
+  <!-- Cím START -->
+  <!-- Kanji, japánnév, magyarnév -->
+  <div class="kanji-container"><i class="fa fa-arrows" aria-hidden="true">
+    {{jutsu.tipus.kanji}}
+  </i></div><span class="nev" [ngStyle]="titleStyling()">{{jutsu.japanNev}} // {{jutsu.magyarNev}}</span>
+  <!-- Cím END-->
+
+
+
+  <!-- Kép START -->
+  <div class="kep-container">
+    <div *ngFor="let image of jutsu.kep">
+      <img src="{{image.href}}" alt="kep" class="jutsu-image">
+    </div>
+  </div>
+  <!-- Kép END -->
+
+
+
+
+
+  <!-- Infó START -->
+  <!-- Tipus, Chakraszint, Besorolás, Kézpecsétek, Használója, Megkötés  -->
+  <div>
+
+  </div>
+  <!-- Infó END -->
+
+
+
+
+
+  <!-- Leírás START -->
+  <!-- Figyelmeztetés, Leírás, Megjegyzés-->
+  <div>
+
+  </div>
+  <!-- Leírás END -->
+
+
+</div>
